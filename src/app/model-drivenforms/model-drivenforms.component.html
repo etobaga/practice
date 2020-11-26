@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    form {border: 3px solid #f1f1f1;}
+  </style>
+</head>
+<body>
+
+<h2>Task 1</h2>
+
+<form action="/action_page.php" method="post">
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+  <div class="container">
+    <label for="fname"><b>First Name</b></label>
+    <input type="text" placeholder="Enter First Name" name="fname" required formControlName="fname" id="fname">
+
+    <label for="lname"><b>Last Name</b></label>
+    <input type="text" placeholder="Enter Last Name" name="lname" required formControlName="lname" id="lname">
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required formControlName="email" id="email">
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required formControlName="psw" id="psw">
+
+    <button type="submit">Login</button>
+
+  </div>
+
+
+</form>
+</form>
+</body>
+</html>

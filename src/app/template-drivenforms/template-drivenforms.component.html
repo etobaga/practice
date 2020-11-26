@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    form {border: 3px solid #f1f1f1;}
+  </style>
+</head>
+<body>
+
+<h2>Task 2</h2>
+
+<form action="/action_page.php" method="post">
+
+  <div class="container">
+  <ng-form>
+      <label for="form1"><b>Form 1 validity is:</b> {{fm1.valid}} </label>
+      <input type="text" #fm1="ngModel" required id="form1" name="form1" ngModel>
+
+    <label for="form1"><b>Form 2 validity is:</b> {{fm2.valid}} </label>
+    <input type="text" #fm2="ngModel" required id="form2" name="form2" ngModel>
+
+    <label for="form1"><b>Form 3 validity is:</b> {{fm3.valid}} </label>
+    <input type="text" #fm3="ngModel" required id="form3" name="form3" ngModel>
+  </ng-form>
+  </div>
+  </form>
+
+</body>
+</html>
